@@ -2,7 +2,7 @@
 
 <template>
   <div class="min-h-dvh relative">
-    <div class="absolute inset-0 m-auto w-fit h-fit animate-pulse text-center">
+    <div class="absolute inset-0 m-auto w-fit h-fit animate-pulse text-center p-10">
       <h1 class="text-6xl font-bold text-red-500">Still working on it!</h1>
       <!-- <p class="text-center mt-3">Stay Tuned!</p> -->
     </div>
