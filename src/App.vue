@@ -1,11 +1,10 @@
 <script setup></script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="min-h-dvh relative">
+    <img src="/public/meme.jpg" alt="" class="absolute top-96 right-0 w-96 h-96 object-cover opacity-60" />
+
+  </div>
 </template>
 
 <style scoped></style>
