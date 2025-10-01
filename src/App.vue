@@ -12,7 +12,6 @@
         class="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-96 object-cover opacity-60" />
     </div>
     <div>
-      <h1>hey</h1>
     </div>
   </div>
 </template>
