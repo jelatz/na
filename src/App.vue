@@ -33,7 +33,7 @@
             <ul class="list-disc list-inside ml-6 text-sm">
               <li>Butch A. - Redemtorist HG</li>
               <li>Harold G. - Bliss HG</li>
-              <li>Nyang S. - Kufa Habagatan HG</li>
+              <li>Nyang S. - Kuta Habagatan HG</li>
               <li>Jepoy E. - Bohol HG</li>
             </ul>
           </li>
@@ -47,7 +47,7 @@
           <li>
             <p class="font-bold">10:15 AM - 11:45 AM — 2nd Meeting: The key to freedom is in the steps</p>
             <ul class="list-disc list-inside ml-6 text-sm">
-              <li>Khim K.</li>
+              <li>Khim K. - LaBang Subangdaku HG</li>
               <li>Jeffrey G. - Sleeping Dragons HG (Pardo)</li>
               <li>Frankie T. - Isla HG</li>
             </ul>
