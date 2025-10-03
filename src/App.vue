@@ -23,7 +23,7 @@
           <!-- Registration -->
           <li>
             <p class="font-bold">07:30 AM - 08:30 AM — Registration</p>
-            <p class="ml-5 italic text-sm">Insertion (08:00 AM - 08:30 AM): Ralph speech on how Pardo Homegroup started
+            <p class="ml-5 italic text-sm">(08:00 AM - 08:30 AM): Ralph speech on how Pardo Homegroup started
             </p>
           </li>
 
