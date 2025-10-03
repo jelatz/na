@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="min-h-dvh bg-black bg-[url('/public/bg.png')] bg-top bg-cover bg-no-repeat relative">
+  <div class="min-h-dvh bg-black bg-[url('/public/bg.png')] bg-top bg-cover object-cover bg-no-repeat relative">
     <!-- Hero Section -->
     <div class="flex flex-col items-center pt-20 space-y-6 relative z-10 px-5 sm:px-0">
       <img src="/logo.webp" loading="lazy" alt="logo" class="w-[20rem] md:w-[30rem]" />
@@ -80,12 +80,12 @@
 
           <!-- Bidding -->
           <li>
-            <p class="font-bold">02:45 PM - 03:45 PM — Bidding & (Trivia & Games)</p>
+            <p class="font-bold">02:45 PM - 03:15 PM — Bidding & (Trivia & Games)</p>
           </li>
 
           <!-- Countdown -->
           <li>
-            <p class="font-bold">03:45 PM - 05:00 PM — Countdown</p>
+            <p class="font-bold">03:15 PM - 05:00 PM — Countdown</p>
           </li>
         </ul>
       </div>
