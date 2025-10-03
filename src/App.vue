@@ -11,7 +11,7 @@
 
 
     <!-- Program Flow -->
-    <div class="flex flex-col justify-start items-center space-y-10 relative z-10 px-6 mt-12 py-10">
+    <div class="flex flex-col justify-start items-center space-y-10 relative z-10 px-6 py-10">
       <!-- Church Decoration -->
       <img src="/church.png" alt="church"
         class="w-[20rem] md:w-[40rem] opacity-20 fixed bottom-2 right-4 md:right-60 z-0" />
