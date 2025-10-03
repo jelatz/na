@@ -67,7 +67,7 @@
           <li>
             <p class="font-bold">01:00 PM - 02:30 PM — 3rd Meeting: Nothing changes if nothing changes</p>
             <ul class="list-disc list-inside ml-6 text-sm">
-              <li>Renniel B. - Isla HG</li>
+              <li>Renniel B. - Bacayan HG</li>
               <li>Stephen T. - Sleeping Dragon HG (Pardo)</li>
               <li>Jerome C. - Bacayan HG</li>
             </ul>
