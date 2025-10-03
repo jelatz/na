@@ -5,15 +5,15 @@
   <div class="min-h-dvh bg-black bg-[url('/public/bg.png')] bg-top bg-cover bg-no-repeat relative">
     <!-- Hero Section -->
     <div class="flex flex-col items-center pt-20 space-y-6 relative z-10 px-5 sm:px-0">
-      <img src="/logo.png" alt="logo" class="w-[20rem] md:w-[30rem]" />
-      <img src="/topic.png" alt="topic" class="w-[30rem] md:w-[50rem]" />
+      <img src="/logo.webp" loading="lazy" alt="logo" class="w-[20rem] md:w-[30rem]" />
+      <img src="/topic.webp" loading="lazy" alt="topic" class="w-[30rem] md:w-[50rem]" />
     </div>
 
 
     <!-- Program Flow -->
     <div class="flex flex-col justify-start items-center space-y-10 relative z-10 px-6 py-10">
       <!-- Church Decoration -->
-      <img src="/church.png" alt="church"
+      <img src="/church.webp" alt="church"
         class="w-[20rem] md:w-[40rem] opacity-20 fixed bottom-2 right-4 md:right-60 z-0" />
 
       <div class="text-white max-w-xl w-full">
