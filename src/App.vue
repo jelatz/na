@@ -29,7 +29,7 @@
 
           <!-- 1st Meeting -->
           <li>
-            <p class="font-bold">08:30 AM - 10:00 AM — 1st Meeting: From Pain to Purpose</p>
+            <p class="font-bold">08:30 AM - 09:30 AM — 1st Meeting: From Pain to Purpose</p>
             <ul class="list-disc list-inside ml-6 text-sm">
               <li>Butch A. - Redemtorist HG</li>
               <li>Harold G. - Bliss HG</li>
@@ -40,12 +40,12 @@
 
           <!-- Break -->
           <li>
-            <p class="font-bold">10:00 AM - 10:15 AM — Break</p>
+            <p class="font-bold">09:30 AM - 09:45 AM — Break</p>
           </li>
 
           <!-- 2nd Meeting -->
           <li>
-            <p class="font-bold">10:15 AM - 11:45 AM — 2nd Meeting: The key to freedom is in the steps</p>
+            <p class="font-bold">09:45 AM - 10:45 AM — 2nd Meeting: The key to freedom is in the steps</p>
             <ul class="list-disc list-inside ml-6 text-sm">
               <li>Khim K. - LaBang Subangdaku HG</li>
               <li>Jeffrey G. - Sleeping Dragons HG (Pardo)</li>
@@ -53,9 +53,18 @@
             </ul>
           </li>
 
-          <!-- Trivia -->
+          <!-- Break -->
           <li>
-            <p class="font-bold">11:45 AM - 12:00 PM — Trivia & Games</p>
+            <p class="font-bold">10:45 AM - 11:00 AM — Break</p>
+          </li>
+
+          <li>
+            <p class="font-bold">11:00 AM - 12:00 PM — (Still workong in a topic)</p>
+            <ul class="list-disc list-inside ml-6 text-sm">
+              <li>Khim K. - LaBang Subangdaku HG</li>
+              <li>Jeffrey G. - Sleeping Dragons HG (Pardo)</li>
+              <li>Frankie T. - Isla HG</li>
+            </ul>
           </li>
 
           <!-- Lunch -->
@@ -65,7 +74,7 @@
 
           <!-- 3rd Meeting -->
           <li>
-            <p class="font-bold">01:00 PM - 02:30 PM — 3rd Meeting: Nothing changes if nothing changes</p>
+            <p class="font-bold">01:00 PM - 02:00 PM — 4th Meeting: Nothing changes if nothing changes</p>
             <ul class="list-disc list-inside ml-6 text-sm">
               <li>Renniel B. - Bacayan HG</li>
               <li>Stephen T. - Sleeping Dragon HG (Pardo)</li>
@@ -73,14 +82,9 @@
             </ul>
           </li>
 
-          <!-- Break -->
-          <li>
-            <p class="font-bold">02:30 PM - 02:45 PM — Break</p>
-          </li>
-
           <!-- Bidding -->
           <li>
-            <p class="font-bold">02:45 PM - 03:15 PM — Bidding & (Trivia & Games)</p>
+            <p class="font-bold">02:30 PM - 03:15 PM — Bidding & (Trivia & Games)</p>
           </li>
 
           <!-- Countdown -->
