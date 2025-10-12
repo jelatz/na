@@ -19,7 +19,7 @@
       <div class="text-white max-w-xl w-full">
         <h1 class="text-3xl text-white font-extrabold mb-6 text-center">Program Flow</h1>
 
-        <ul class="space-y-6 text-lg">
+        <ul class="space-y-6 text-md">
           <!-- Registration -->
           <li>
             <p class="font-bold">07:30 AM - 08:30 AM — Registration</p>
