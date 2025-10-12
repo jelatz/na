@@ -58,12 +58,11 @@
             <p class="font-bold">10:45 AM - 11:00 AM — Break</p>
           </li>
 
+          <!-- 3rd Meeting -->
           <li>
-            <p class="font-bold">11:00 AM - 12:00 PM — (Still workong in a topic)</p>
+            <p class="font-bold">11:00 AM - 12:00 PM — (Still working on a topic)</p>
             <ul class="list-disc list-inside ml-6 text-sm">
-              <li>Khim K. - LaBang Subangdaku HG</li>
-              <li>Jeffrey G. - Sleeping Dragons HG (Pardo)</li>
-              <li>Frankie T. - Isla HG</li>
+              <li>Will check back later for the speakers</li>
             </ul>
           </li>
 
@@ -72,7 +71,7 @@
             <p class="font-bold">12:00 PM - 01:00 PM — Lunch</p>
           </li>
 
-          <!-- 3rd Meeting -->
+          <!-- 4th Meeting -->
           <li>
             <p class="font-bold">01:00 PM - 02:00 PM — 4th Meeting: Nothing changes if nothing changes</p>
             <ul class="list-disc list-inside ml-6 text-sm">
