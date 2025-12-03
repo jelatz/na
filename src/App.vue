@@ -1,4 +1,56 @@
 <script setup>
+import { ref } from 'vue';
+import { toPng } from 'html-to-image';
+
+const pageRef = ref(null);
+const downloadBtnRef = ref(null);
+const isDownloading = ref(false);
+
+const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+
+const downloadImage = async () => {
+  if (!pageRef.value) return;
+
+  try {
+    isDownloading.value = true;
+
+    // Hide download button before capturing
+    if (downloadBtnRef.value) {
+      downloadBtnRef.value.style.display = "none";
+    }
+
+    await wait(100); // small delay to allow DOM to update
+
+    const node = pageRef.value;
+
+    const width = Math.max(node.scrollWidth, node.clientWidth);
+    const height = Math.max(node.scrollHeight, node.clientHeight);
+
+    const dataUrl = await toPng(node, {
+      quality: 1,
+      cacheBust: true,
+      pixelRatio: 2,
+      width,
+      height,
+    });
+
+    const link = document.createElement('a');
+    link.download = 'NA-Cebu-20th-Unity-Day-Program.png';
+    link.href = dataUrl;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  } catch (err) {
+    console.error('Download failed:', err);
+    alert('Failed to generate PNG. See console.');
+  } finally {
+    // Show button again
+    if (downloadBtnRef.value) {
+      downloadBtnRef.value.style.opacity = "1";
+    }
+    isDownloading.value = false;
+  }
+};
 </script>
 
 <template>
@@ -20,15 +72,12 @@
       <div class="max-w-2xl w-full bg-black/60 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/10">
         <h1 class="text-3xl font-extrabold mb-8 text-center uppercase tracking-wide">Program Flow</h1>
 
-        <!-- Program List -->
         <ul class="space-y-8 text-sm md:text-base">
-          <!-- Registration -->
           <li class="border-l-4 border-yellow-400 pl-4">
             <p class="font-bold text-yellow-300">07:30 AM – 08:30 AM — Registration & Welcome Coffee</p>
             <p class="italic ml-4 mt-1 text-gray-300">(08:00 AM – 08:30 AM): Ralph – How Pardo Homegroup Started</p>
           </li>
 
-          <!-- 1st Meeting -->
           <li class="border-l-4 border-blue-400 pl-4">
             <p class="font-bold text-blue-300">08:30 AM – 09:30 AM — 1st Meeting: From Pain to Purpose</p>
             <ul class="list-disc list-inside ml-6 text-gray-300">
@@ -39,18 +88,14 @@
             </ul>
           </li>
 
-          <!-- Break -->
           <li class="border-l-4 border-green-400 pl-4">
             <p class="font-bold text-green-300">09:30 AM – 09:45 AM — Morning Break</p>
           </li>
 
-          <!-- Trivia & Games -->
           <li class="border-l-4 border-pink-400 pl-4">
             <p class="font-bold text-pink-300">09:45 AM – 10:45 AM — Entertainment & Games (Round 1)</p>
-            <!-- <p class="ml-4 text-gray-300 italic">Interactive challenges and bonding activities</p> -->
           </li>
 
-          <!-- 2nd Meeting -->
           <li class="border-l-4 border-purple-400 pl-4">
             <p class="font-bold text-purple-300">10:45 AM – 11:45 AM — 2nd Meeting: The Key to Freedom Is in the Steps
             </p>
@@ -61,13 +106,10 @@
             </ul>
           </li>
 
-          <!-- Lunch -->
           <li class="border-l-4 border-orange-400 pl-4">
             <p class="font-bold text-orange-300">11:45 AM – 01:00 PM — Lunch & Fellowship</p>
-            <!-- <p class="ml-4 text-gray-300 italic">Share stories and laughter with fellow Homegroup members</p> -->
           </li>
 
-          <!-- 3rd Meeting -->
           <li class="border-l-4 border-cyan-400 pl-4">
             <p class="font-bold text-cyan-300">01:00 PM – 02:00 PM — 3rd Meeting: Nothing Changes If Nothing Changes</p>
             <ul class="list-disc list-inside ml-6 text-gray-300">
@@ -77,32 +119,32 @@
             </ul>
           </li>
 
-          <!-- Energizer -->
           <li class="border-l-4 border-emerald-400 pl-4">
             <p class="font-bold text-emerald-300">02:00 PM – 02:30 PM — Entertainment & Games (Round 2)</p>
-            <!-- <p class="ml-4 text-gray-300 italic">A short activity to re-energize everyone</p> -->
           </li>
 
-          <!-- Bidding -->
           <li class="border-l-4 border-red-400 pl-4">
             <p class="font-bold text-red-300">02:30 PM – 03:15 PM — Bidding</p>
-            <!-- <p class="ml-4 text-gray-300 italic">Fun auction-style games and final trivia round</p> -->
           </li>
 
-          <!-- Countdown -->
           <li class="border-l-4 border-yellow-500 pl-4">
             <p class="font-bold text-yellow-300">03:15 PM – 05:00 PM — Countdown & Closing Celebration</p>
-            <!-- <p class="ml-4 text-gray-300 italic">Praise & Worship • Group Photos • Closing Remarks</p> -->
           </li>
         </ul>
       </div>
-      <button @click="downloadImage"
-        class="fixed bottom-6 right-6 bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-4 py-3 rounded-full shadow-lg transition-all duration-200 z-50">
-        📥 Download PNG
+
+      <!-- Floating Download Button (excluded from screenshot) -->
+      <button ref="downloadBtnRef" @click="downloadImage" :disabled="isDownloading"
+        class="fixed bottom-6 right-6 bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-4 py-3 rounded-full shadow-lg transition-all duration-200 z-50 disabled:opacity-60 disabled:cursor-wait">
+        <template v-if="isDownloading">
+          ⏳ Generating...
+        </template>
+        <template v-else>
+          📥 Download PNG
+        </template>
       </button>
     </div>
 
-    <!-- Footer -->
     <footer class="text-center text-gray-400 text-sm py-6 relative z-10">
       <p>“From pain comes purpose, from change comes freedom.”</p>
       <p class="mt-1">© 2025 Pardo Homegroup Fellowship</p>
