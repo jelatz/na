@@ -6,20 +6,21 @@
     <!-- Hero Section -->
     <div class="flex flex-col items-center pt-20 space-y-6 relative z-10 px-5">
       <img src="/logo.webp" loading="lazy" alt="logo" class="w-[18rem] md:w-[28rem]" />
-      <img src="/topic.webp" loading="lazy" alt="topic" class="w-[28rem] md:w-[45rem]" />
-      <p class="text-center text-gray-300 text-sm italic">“From Pain to Purpose — A Journey of Change and Freedom”</p>
+      <img src="/topic.webp" loading="lazy" alt="topic" class="w-[28rem] md:w-[60rem]" />
+      <p class="text-center text-gray-300 text-sm md:text-2xl italic">“From Pain to Purpose — A Journey of Change and
+        Freedom”</p>
     </div>
 
     <!-- Program Flow -->
     <div class="flex flex-col items-center relative z-10 px-6 py-16">
       <!-- Decorative Church -->
       <img src="/church.webp" alt="church"
-        class="w-[20rem] md:w-[35rem] opacity-15 fixed bottom-0 right-10 md:right-32 z-50 pointer-events-none" />
+        class="w-[20rem] md:w-[45rem] opacity-15 fixed bottom-0 right-10 md:right-32 z-50 pointer-events-none" />
 
       <div class="max-w-2xl w-full bg-black/60 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/10">
-        <h1 class="text-3xl font-extrabold mb-8 text-center uppercase tracking-wide">Program Flow</h1>
+        <h1 class="text-4xl font-extrabold mb-8 text-center uppercase tracking-wide">Program Flow</h1>
 
-        <ul class="space-y-8 text-sm md:text-base">
+        <ul class="space-y-8 text-sm md:text-xl">
           <li class="border-l-4 border-yellow-400 pl-4">
             <p class="font-bold text-yellow-300">07:30 AM – 08:30 AM — Registration & Welcome Coffee</p>
             <p class="italic ml-4 mt-1 text-gray-300">(08:00 AM – 08:30 AM): Ralph – How Pardo Homegroup Started</p>
@@ -82,7 +83,7 @@
 
     </div>
 
-    <footer class="text-center text-gray-400 text-sm py-6 relative z-10">
+    <footer class="text-center text-gray-400 text-sm md:text-lg py-6 relative z-10">
       <p>“From pain comes purpose, from change comes freedom.”</p>
       <p class="mt-1">© 2025 Pardo Homegroup Fellowship</p>
     </footer>
