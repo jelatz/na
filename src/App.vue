@@ -2,7 +2,8 @@
 </script>
 
 <template>
-  <div class="min-h-dvh bg-black bg-[url('/public/bg.png')] bg-top bg-cover bg-no-repeat relative text-white">
+  <div ref="pageRef"
+    class="min-h-dvh bg-black bg-[url('/public/bg.png')] bg-top bg-cover bg-no-repeat relative text-white">
     <!-- Hero Section -->
     <div class="flex flex-col items-center pt-20 space-y-6 relative z-10 px-5">
       <img src="/logo.webp" loading="lazy" alt="logo" class="w-[18rem] md:w-[28rem]" />
@@ -95,6 +96,10 @@
           </li>
         </ul>
       </div>
+      <button @click="downloadImage"
+        class="fixed bottom-6 right-6 bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-4 py-3 rounded-full shadow-lg transition-all duration-200 z-50">
+        📥 Download PNG
+      </button>
     </div>
 
     <!-- Footer -->
