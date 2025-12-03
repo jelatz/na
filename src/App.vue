@@ -54,7 +54,7 @@
             <p class="font-bold text-purple-300">10:45 AM – 11:45 AM — 2nd Meeting: The Key to Freedom Is in the Steps
             </p>
             <ul class="list-disc list-inside ml-6 text-gray-300">
-              <li>Khim K. – LaBang Subangdaku HG</li>
+              <li>Jheck Y.</li>
               <li>Jeffrey G. – Sleeping Dragons HG (Pardo)</li>
               <li>Frankie T. – Isla HG</li>
             </ul>
