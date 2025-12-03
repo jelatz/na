@@ -1,57 +1,4 @@
-<script setup>
-import { ref } from 'vue';
-import { toPng } from 'html-to-image';
-
-const pageRef = ref(null);
-const downloadBtnRef = ref(null);
-const isDownloading = ref(false);
-
-const wait = (ms) => new Promise((r) => setTimeout(r, ms));
-
-const downloadImage = async () => {
-  if (!pageRef.value) return;
-
-  try {
-    isDownloading.value = true;
-
-    // Hide download button before capturing
-    if (downloadBtnRef.value) {
-      downloadBtnRef.value.style.display = "none";
-    }
-
-    await wait(100); // small delay to allow DOM to update
-
-    const node = pageRef.value;
-
-    const width = Math.max(node.scrollWidth, node.clientWidth);
-    const height = Math.max(node.scrollHeight, node.clientHeight);
-
-    const dataUrl = await toPng(node, {
-      quality: 1,
-      cacheBust: true,
-      pixelRatio: 2,
-      width,
-      height,
-    });
-
-    const link = document.createElement('a');
-    link.download = 'NA-Cebu-20th-Unity-Day-Program.png';
-    link.href = dataUrl;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  } catch (err) {
-    console.error('Download failed:', err);
-    alert('Failed to generate PNG. See console.');
-  } finally {
-    // Show button again
-    if (downloadBtnRef.value) {
-      downloadBtnRef.value.style.opacity = "1";
-    }
-    isDownloading.value = false;
-  }
-};
-</script>
+<script setup></script>
 
 <template>
   <div ref="pageRef"
@@ -133,16 +80,6 @@ const downloadImage = async () => {
         </ul>
       </div>
 
-      <!-- Floating Download Button (excluded from screenshot) -->
-      <button ref="downloadBtnRef" @click="downloadImage" :disabled="isDownloading"
-        class="fixed bottom-6 right-6 bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-4 py-3 rounded-full shadow-lg transition-all duration-200 z-50 disabled:opacity-60 disabled:cursor-wait">
-        <template v-if="isDownloading">
-          ⏳ Generating...
-        </template>
-        <template v-else>
-          📥 Download PNG
-        </template>
-      </button>
     </div>
 
     <footer class="text-center text-gray-400 text-sm py-6 relative z-10">
